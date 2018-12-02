@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileHW2.BackPage">
+    <ContentPage Title="Hakkında">
+        <StackLayout>
+            <Label TextColor="Red" FontSize="15" Text="Bölüm Hakkında" />
+            <Label FontSize="20" Text="About"/>
+            <Label TextColor="Red" FontSize="15" Text="Misyon"/>
+            <Label FontSize="12">Özgörevimiz, çağdaş ve evrensel nitelikte bilgi üreten, bu bilgiyi toplumun faydası için kullanan, temel değerlerimizi ...</Label>
+            <Label TextColor="Red" FontSize="15" Text="Vizyon"/>
+            <Label FontSize="12">Vizyonumuz, mezunlarımızın ve öğretim elemanlarımızın geliştirdiği nitelikli projeler ve toplumsal katkılarıyla gerek ...</Label>
+            <Label TextColor="Red" FontSize="15" Text="Temel Değerler"/>
+            <StackLayout>
+                <Label Text="Bilimsellik"/>
+                <Label Text="İnsan Odaklılık"/>
+                <Label Text="Yenilikçilik"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Kişiler">
+        <StackLayout Margin="5,5,5,5">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="0" Grid.Row="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/aarslan2.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Dr.Öğr. Üyesi Ahmet ARSLAN" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:aarslan2@anadolu.edu.tr" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-555-5555" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="ahmet"  Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" />
+                    </Grid>
+                </StackLayout>
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="1" Grid.Row="0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/yhoscan.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Prof.Dr. Yaşar HOŞCAN" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:hoscan@anadolu.edu.tr" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-444-4444" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="yasar" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" />
+                    </Grid>
+                    
+                </StackLayout>
+
+
+
+
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="0" Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/serkangunal.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Assoc.Prof.Dr. Serkan GÜNAL" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:serkangunal@anadolu.edu.tr " FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-333-3333" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="serkan" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked"/>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="1" Grid.Row="1">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/ckaleli.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Assoc.Prof.Dr. Cihan KALELİ" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:ckaleli@anadolu.edu.tr" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-222-2222" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="cihan" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked"/>
+                    </Grid>
+                </StackLayout>
+
+
+
+
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="0" Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/akuysal.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Dr.Öğr. Üyesi Alper UYSAL" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:akuysal@anadolu.edu.tr" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-111-1111" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="alperU" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" />
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="1" Grid.Row="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/abilge.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Dr.Öğr. Üyesi Alper BİLGE" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:abilge@anadolu.edu.tr" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-444-3333" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="alperB" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" />
+                    </Grid>
+                </StackLayout>
+
+
+
+
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="0" Grid.Row="3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/sevcany.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Dr.Öğr. Üyesi Sevcan YILMAZ" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:sevcany@anadolu.edu.tr " FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-444-2222" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="sevcan" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" />
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="#fffbd6" HeightRequest="80" Grid.Column="1" Grid.Row="3">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+                        <Image Source="http://ceng.eskisehir.edu.tr/img/byurekli.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        <Label Text="Res.Asst.Dr. Burcu YILMAZEL" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="Mail:byurekli@anadolu.edu.tr " FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="GSM:555-444-1111" FontAttributes="Bold" FontSize="6" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+                        <Button x:Name="burcu" Text="CALL" FontAttributes="Bold" FontSize="9" Grid.Column="1" Grid.Row="3" Clicked="OnButtonClicked" />
+                    </Grid>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Altyapı">
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B1" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 36"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B1_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B2" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 15"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B2_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B3" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 18"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B3_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B4" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 24"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B4_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B5" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 15"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B5_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B6" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 24"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B6_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Derslik-B7" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 54"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Class_B7_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Lab-01" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 61 PC"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Lab_PC1_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Lab-02" FontSize="15" FontAttributes="Bold"/>
+                    <Label Text="Kapasite: 24 iMac"/>
+                </StackLayout>
+                <Image Source="http://ceng.eskisehir.edu.tr/Documents/Lab_Mac1_icon.jpg" HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTapped" NumberOfTapsRequired="2" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Dersler">
+        <StackLayout Padding="5,0,0,5">
+            <Label TextColor="Red" FontSize="15" Text="Bu Dönem Yürütülen Lisans ve Lisansüstü Ders Bilgileri"/>
+            <Label Text="BIL519 - İleri Algoritma Analizi"/>
+            <Label Text="BIL551 - İleri Veri Tabanı Yönetim Sistemleri"/>
+            <Label Text="BIL561 - Bulanık Sinir Ağları"/>
+            <Label Text="BIL567 - Öneri Sistemlerine Giriş"/>
+            <Label Text="BIM101 - Bilgisayar Programlama I"/>
+            <Label Text="BIM203 - Mantık Tasarımı"/>
+            <Label Text="BIM207 - Bilgisayar Programlama III"/>
+            <Label Text="BIM209 - Yazılım Tasarlama ve Geliştirme Prensipleri"/>
+            <Label TextColor="Red" Margin="0,10,0,0" FontSize="20" Text="To Be Continue..." FontAttributes="Italic"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

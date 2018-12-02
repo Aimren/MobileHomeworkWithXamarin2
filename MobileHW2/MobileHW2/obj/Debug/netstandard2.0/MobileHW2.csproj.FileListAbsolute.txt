@@ -1,0 +1,14 @@
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\bin\Debug\netstandard2.0\MobileHW2.deps.json
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\bin\Debug\netstandard2.0\MobileHW2.dll
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\bin\Debug\netstandard2.0\MobileHW2.pdb
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MobileHW2.csprojAssemblyReference.cache
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MobileHW2.csproj.CoreCompileInputs.cache
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MobileHW2.AssemblyInfoInputs.cache
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MobileHW2.AssemblyInfo.cs
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MobileHW2.dll
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\MobileHW2.pdb
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\BackPage.xaml.g.cs
+C:\Users\CYHM\source\repos\MobileHW2\MobileHW2\MobileHW2\obj\Debug\netstandard2.0\ImageShow.xaml.g.cs
